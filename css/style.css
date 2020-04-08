@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Arapey';
+  cursor: none;
+}
+
+ul li {
+  list-style: none;
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 30%;
+}
+
+section {
+  padding: 3em;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  background: #1d1d1d;
+}
+
+.sidenav {
+  background: #181818;
+  width: 50px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+.sidenav a {
+  font-size: 22px;
+  color: #4d4d4e;
+  display: block;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.menu{
+  padding: 200px 0 0 0;
+}
+
+
+/* on Scroll animation design */
+
+span {
+  width: 100%;
+  background: red;
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+}
+
+blockquote {
+  font-size: 2.3em;
+  width: 30%;
+  margin-top: 17%;
+  position: absolute;
+}
+
+img {
+  position: absolute;
+}
+
+img:nth-of-type(1) {
+  width: 40%;
+  right: 0;
+  top: 20%;
+}
+
+img:nth-of-type(2) {
+  width: 25%;
+  right: 40%;
+  top: 29%;
+  margin-top: 15%;
+}
+
+section:nth-child(odd) {
+  background: #1d1d1d;
+}
+
+.sticky {
+  background: #1d1d1d !important;
+}
+
+.percentage {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 5px solid lightgray;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* cursor */
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: block;
+  transition: opacity 300ms linear;
+  opacity: 0;
+  width: 6px;
+  height: 6px;
+}
+
+.cursor.moving {
+  opacity: 1;
+}
+
+.cursor::before {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.cursor.expand::before {
+  opacity: 0;
+}
+
+.node {
+  pointer-events: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: block;
+  transition: opacity 300ms linear;
+  opacity: 0;
+  /*element width*/
+  width: 20px;
+  height: 20px;
+}
+
+.node.moving {
+  opacity: 1;
+}
+
+.node::before {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+  transform: scale(1.5);
+  opacity: 1;
+  transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+}
+
+.node.expand::before {
+  transform: scale(3);
+  background-color: #ffffff;
+  opacity: 0.2;
+}
