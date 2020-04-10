@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Home</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
+
 <body>
+
   
   <div class="node" id="node"></div>
   <div class="cursor" id="cursor"></div>
-  
+
   <nav class="sidenav">
     <div class="logo"><img src="" alt=""></div>
     <div class="menu">
       <ul>
-        <li  class="nodeHover"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        <li  class="nodeHover"><a href="/about.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-        <li  class="nodeHover"><a href="/contact.html"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-        
+        <li class="nodeHover"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li class="nodeHover"><a href="/about.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+        <li class="nodeHover"><a href="/contact.html"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li class="nodeHover"><a href="/portfolio.html"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+        <li><a href="/moredesign.html">More </a></li>
+
       </ul>
     </div>
   </nav>
 
 
   <div class="main">
-    <section>
-      <h1>Scroll down</h1>
-    </section>
-    
-    <section class="sticky">
-      <blockquote>"Different Style"<span></span></blockquote>
-      <img id="office" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/office1.png">
-      <img id="building" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/sky.jpg">
-      <div id="box"></div>
-    </section>
-    
-    <section>
-      <h1>Scroll up</h1>
-    </section>
+    <div class="home">
+      <div class="headline">
+        <h1>believes in perfection <br>by design and <br>performance<br> by default.</h1>
+      </div>
+      <div class="left">
+        <img src="/img/style1.jpg" class="heroimg">
+      </div>
+
+    </div>
   </div>
+
+
+
   
- 
 
+  
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+    integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+    integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/gh/hmongouachon/NodeCursor/src/nodecursor-jquery.js"></script>
 
   <script src="/js/main.js"></script>
 </body>
+
 </html>
